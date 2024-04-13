@@ -21,6 +21,7 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
+        tabBarShowLabel: false,
         tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
         // Disable the static render of the header on web
         // to prevent a hydration error in React Navigation v6.
@@ -28,10 +29,16 @@ export default function TabLayout() {
       }}
     >
       <Tabs.Screen
+        name="login"
+        options={{
+          title: "Log In",
+          tabBarIcon: ({ color }) => <TabBarIcon name="user" color={color} />,
+        }}
+      />
+      <Tabs.Screen
         name="timetable"
         options={{
           title: "EDT",
-          tabBarShowLabel: false,
           tabBarIcon: ({ color }) => <TabBarIcon name="table" color={color} />,
           headerRight: () => (
             <Link href="/modal" asChild>
@@ -47,13 +54,6 @@ export default function TabLayout() {
               </Pressable>
             </Link>
           ),
-        }}
-      />
-      <Tabs.Screen
-        name="login"
-        options={{
-          title: "Log In",
-          tabBarIcon: ({ color }) => <TabBarIcon name="user" color={color} />,
         }}
       />
       <Tabs.Screen
