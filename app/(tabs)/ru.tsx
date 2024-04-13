@@ -21,7 +21,7 @@ export default function TabOneScreen() {
         onPress={() => handleButtonPress("https://www.crous-rennes.fr/restaurant/resto-u-letoile-3/")}
       >
         <ImageBackground
-          source={{ uri: "https://ephoto.lescrous.fr/link/kmr19jgwam61k00.jpeg" }}
+          source={{ uri: "https://ephoto.lescrous.fr/link/kmr19jgwam61k00.jpeg"}}
           style={styles.buttonImage}
         />
         <Text style={styles.buttonText}>RU de l'Etoile</Text>
