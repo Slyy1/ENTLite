@@ -6,6 +6,7 @@ import EditScreenInfo from "@/components/EditScreenInfo";
 import { Text, View } from "@/components/Themed";
 
 import { Calendar, LocaleConfig } from "react-native-calendars";
+import Emoji from "@/components/Emoji";
 
 LocaleConfig.locales["fr"] = {
   monthNames: [
