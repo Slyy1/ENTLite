@@ -53,16 +53,6 @@ const SchoolSchedule = () => {
           </View>
         )}
       />
-      {selectedDate && schedule[selectedDate as keyof typeof schedule] ? (
-        schedule[selectedDate as keyof typeof schedule].map((item, index) => (
-          <View key={index}>
-            <Text>{item.subject}</Text>
-            <Text>{item.time}</Text>
-          </View>
-        ))
-      ) : (
-        <Text>No classes today</Text>
-      )}
     </View>
   );
 };
