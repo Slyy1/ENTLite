@@ -31,6 +31,7 @@ export default function TabLayout() {
         name="timetable"
         options={{
           title: "EDT",
+          tabBarShowLabel: false,
           tabBarIcon: ({ color }) => <TabBarIcon name="table" color={color} />,
           headerRight: () => (
             <Link href="/modal" asChild>
@@ -53,6 +54,30 @@ export default function TabLayout() {
         options={{
           title: "Log In",
           tabBarIcon: ({ color }) => <TabBarIcon name="user" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="ru"
+        options={{
+          title: "Les RUs",
+          tabBarIcon: ({ color }) => <TabBarIcon name="coffee" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="freeroom"
+        options={{
+          title: "Salles Libres",
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon name="briefcase" color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="settings"
+        options={{
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon name="ellipsis-h" color={color} />
+          ),
         }}
       />
     </Tabs>
