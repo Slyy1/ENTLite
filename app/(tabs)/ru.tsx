@@ -24,7 +24,7 @@ export default function TabOneScreen() {
           source={{ uri: "https://ephoto.lescrous.fr/link/kmr19jgwam61k00.jpeg"}}
           style={styles.buttonImage}
         />
-        <Text style={styles.buttonText}>RU de l'Etoile</Text>
+        <Text style={styles.buttonText}>RU de l'Etoilee</Text>
       </TouchableOpacity>
       <EditScreenInfo path="app/(tabs)/ru.tsx" />
     </View>
